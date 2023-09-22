@@ -122,7 +122,6 @@ class _MyAppState extends State<MyApp> {
             child: ElevatedButton(
                 onPressed: () {
                   result = x + y;
-                  setState(() {});
                   showResultDialog(context, result);
                 },
                 child: Text("더하기의 결과값은?")),
@@ -132,7 +131,6 @@ class _MyAppState extends State<MyApp> {
             child: ElevatedButton(
                 onPressed: () {
                   result = x * y;
-                  setState(() {});
                   showResultDialog(context, result);
                 },
                 child: Text("곱하기의 결과값은?")),
@@ -142,7 +140,6 @@ class _MyAppState extends State<MyApp> {
             child: ElevatedButton(
                 onPressed: () {
                   result = x - y;
-                  setState(() {});
                   showResultDialog(context, result);
                 },
                 child: Text("빼기의 결과값은?")),
@@ -152,7 +149,6 @@ class _MyAppState extends State<MyApp> {
             child: ElevatedButton(
                 onPressed: () {
                   result = (x / y).round();
-                  setState(() {});
                   showResultDialog(context, result);
                 },
                 child: Text("나누기의 결과값은?")),
