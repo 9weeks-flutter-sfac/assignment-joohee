@@ -95,6 +95,10 @@ class _MyAppState extends State<MyApp> {
                       ),
                     ),
                     InkWell(
+                      onTap: () {
+                        order.add('깐쇼새우');
+                        setState(() {});
+                      },
                       child: MenuCard(
                         menu: '깐쇼새우',
                         imgUrl: 'assets/gganshosaewoo.png',
